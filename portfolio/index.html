@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Dhinakaran P – Full Stack & Embedded Systems Developer. Explore my projects, skills, and experience." />
+  <meta name="keywords" content="portfolio, Dhinakaran P, web developer, HTML, CSS, JavaScript, Python, C++, ECE, embedded systems, Arduino, ShadowFox" />
+  <meta name="author" content="Dhinakaran P" />
+  <title>Dhinakaran P | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== PARTICLES BACKGROUND ===================== -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="navLogo">
+        &lt;<span>DP</span>/&gt;
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" id="navHome">Home</a></li>
+        <li><a href="#about" class="nav-link" id="navAbout">About</a></li>
+        <li><a href="#skills" class="nav-link" id="navSkills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="navProjects">Projects</a></li>
+        <li><a href="#resume" class="nav-link" id="navResume">Resume</a></li>
+        <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting" id="heroGreeting">👋 Hello, I'm</p>
+      <h1 class="hero-name" id="heroName">Dhinakaran P</h1>
+      <div class="hero-typing-wrapper">
+        <span class="hero-role" id="heroRole"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-bio" id="heroBio">
+        A passionate technology student with a strong foundation in programming and problem-solving, crafting innovative web and IoT embedded solutions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" id="viewWorkBtn">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="contactBtn">Contact Me</a>
+      </div>
+      <div class="hero-socials" id="heroSocials">
+        <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="social-link" id="heroGithub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/dhina-karan-5b51a0331" target="_blank" rel="noopener noreferrer" class="social-link" id="heroLinkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:dhinakarangt45@gmail.com" class="social-link" id="heroEmail" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-illustration" id="heroIllustration">
+      <div class="hero-avatar" id="heroAvatar">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-inner">
+          <img src="assets/profile.jpg" alt="Dhinakaran P" />
+        </div>
+        <div class="floating-badge badge-1">Python</div>
+        <div class="floating-badge badge-2">C++</div>
+        <div class="floating-badge badge-3">IoT</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scrollIndicator" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get To Know Me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-card" id="aboutImageCard">
+            <div class="about-image-bg"></div>
+            <div class="about-image-content">
+              <img src="assets/profile.jpg" alt="Dhinakaran P" class="about-avatar-img" />
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="4" id="statProjects">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="3" id="statMonths">0</span>
+                <span class="stat-label">Semesters ECE</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="10" id="statSkills">0</span>
+                <span class="stat-label">Tech Skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3 class="about-subtitle">I'm a <span class="highlight">Full Stack & IoT Developer</span></h3>
+          <p class="about-description">
+            Hi! I'm <strong>Dhinakaran P</strong>, a passionate engineering student based in Puducherry. Currently pursuing my B.Tech in Electronics and Communication Engineering, I have a strong interest in software development, web applications, and embedded IoT hardware.
+          </p>
+          <p class="about-description">
+            My skill set bridges code and hardware. I enjoy creating responsive, elegant frontend solutions, writing efficient backend APIs, and building smart hardware automation projects utilizing microcontrollers like Arduino and NodeMCU.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Puducherry, India</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">B.Tech ECE (2024-2028)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Open to Internships</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">dhinakarangt45@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" id="aboutContactBtn">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill Bars -->
+        <div class="skills-bars reveal">
+          <h3 class="skills-subtitle">Technical Proficiency</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python Programming</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90" id="skillPython"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">C++ Programming</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85" id="skillCpp"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">IoT & Embedded Systems</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85" id="skillIot"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Full Stack & Web Dev</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80" id="skillWeb"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL Database</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="75" id="skillSql"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Skill Cards -->
+        <div class="skills-cards reveal">
+          <h3 class="skills-subtitle">Tools & Technologies</h3>
+          <div class="tech-cards-grid">
+            <div class="tech-card" id="techPython">
+              <span class="tech-icon">🐍</span>
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-card" id="techCpp">
+              <span class="tech-icon">💻</span>
+              <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-card" id="techC">
+              <span class="tech-icon">⚙️</span>
+              <span class="tech-name">C Lang</span>
+            </div>
+            <div class="tech-card" id="techJava">
+              <span class="tech-icon">☕</span>
+              <span class="tech-name">Java</span>
+            </div>
+            <div class="tech-card" id="techSql">
+              <span class="tech-icon">🗄️</span>
+              <span class="tech-name">SQL</span>
+            </div>
+            <div class="tech-card" id="techWeb">
+              <span class="tech-icon">🌐</span>
+              <span class="tech-name">HTML/CSS/JS</span>
+            </div>
+            <div class="tech-card" id="techArduino">
+              <span class="tech-icon">🔌</span>
+              <span class="tech-name">Arduino</span>
+            </div>
+            <div class="tech-card" id="techNodemcu">
+              <span class="tech-icon">📡</span>
+              <span class="tech-name">NodeMCU</span>
+            </div>
+            <div class="tech-card" id="techFusion">
+              <span class="tech-icon">🎨</span>
+              <span class="tech-name">Fusion 360</span>
+            </div>
+            <div class="tech-card" id="techAnalytics">
+              <span class="tech-icon">📊</span>
+              <span class="tech-name">Data Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">Web Dev</button>
+        <button class="filter-btn" data-filter="iot" id="filterIot">IoT & Embedded</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-category="web" id="project1">
+          <div class="project-img" style="background: linear-gradient(135deg, #a855f7, #6366f1);">
+            <div class="project-img-overlay">
+              <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj1Demo">Source Code ↗</a>
+            </div>
+            <div class="project-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web App (Hackathon)</span>
+            <h3 class="project-title">AddressLink</h3>
+            <p class="project-desc">A unified digital address updater and validator developed for governance portals to streamline public records verification.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="iot" id="project2">
+          <div class="project-img" style="background: linear-gradient(135deg, #10b981, #059669);">
+            <div class="project-img-overlay">
+              <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj2Demo">Source Code ↗</a>
+            </div>
+            <div class="project-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">IoT / Hardware</span>
+            <h3 class="project-title">Smart Dustbin</h3>
+            <p class="project-desc">An automated smart dustbin system built with ultrasonic sensors and Arduino Uno for touchless waste management.</p>
+            <div class="project-tech">
+              <span>Arduino</span><span>C++</span><span>Ultrasonic Sensor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="iot" id="project3">
+          <div class="project-img" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+            <div class="project-img-overlay">
+              <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj3Demo">Source Code ↗</a>
+            </div>
+            <div class="project-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">IoT / Analytics</span>
+            <h3 class="project-title">Predictive Maintenance</h3>
+            <p class="project-desc">An IoT-based predictive maintenance system utilizing threshold-based classification via NodeMCU, ThingSpeak, and hardware sensors.</p>
+            <div class="project-tech">
+              <span>NodeMCU</span><span>ThingSpeak</span><span>Sensors</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="iot" id="project4">
+          <div class="project-img" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+            <div class="project-img-overlay">
+              <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj4Demo">Source Code ↗</a>
+            </div>
+            <div class="project-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">IoT / Embedded</span>
+            <h3 class="project-title">Smart Door Lock System</h3>
+            <p class="project-desc">A smart door lock system controlled remotely via IoT integration using Arduino, designed for smart home security.</p>
+            <div class="project-tech">
+              <span>IoT</span><span>Arduino</span><span>C++</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME SECTION ===================== -->
+  <section class="section section-dark" id="resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">My <span class="highlight">Resume</span></h2>
+      </div>
+      <div class="resume-grid">
+        <!-- Education -->
+        <div class="resume-column reveal">
+          <div class="resume-column-header">
+            <span class="resume-icon">🎓</span>
+            <h3>Education</h3>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" id="edu1">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 – 2028</span>
+                <h4>B.Tech in Electronics & Communication Eng.</h4>
+                <p class="timeline-org">Manakula Vinayagar Institute of Technology, Puducherry</p>
+                <p class="timeline-desc">Currently pursuing B.Tech with a strong academic record. CGPA: 8.56 / 10 (till 3rd Sem).</p>
+              </div>
+            </div>
+            <div class="timeline-item" id="edu2">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">March 2024</span>
+                <h4>Higher Secondary Certificate (HSC)</h4>
+                <p class="timeline-org">Vivekananda Higher Secondary School, Puducherry</p>
+                <p class="timeline-desc">Completed 12th grade board exams with a score of 74%.</p>
+              </div>
+            </div>
+            <div class="timeline-item" id="edu3">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">May 2022</span>
+                <h4>Secondary School Leaving Certificate (SSLC)</h4>
+                <p class="timeline-org">Vivekananda Higher Secondary School, Puducherry</p>
+                <p class="timeline-desc">Completed 10th grade board exams with a score of 68.60%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Symposia & Workshops -->
+        <div class="resume-column reveal">
+          <div class="resume-column-header">
+            <span class="resume-icon">🔌</span>
+            <h3>Symposia & Workshops</h3>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" id="exp1">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h4>Generative AI & LLMs Workshop</h4>
+                <p class="timeline-org">One Day Technical Workshop</p>
+                <p class="timeline-desc">Participated in building and using Large Language Models for real-world solutions.</p>
+              </div>
+            </div>
+            <div class="timeline-item" id="exp2">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h4>Hardware Testing Workshop</h4>
+                <p class="timeline-org">Electronic Devices Workshop</p>
+                <p class="timeline-desc">Hands-on session on debugging, verifying, and testing electronic hardware components.</p>
+              </div>
+            </div>
+            <div class="timeline-item" id="exp3">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 - 2025</span>
+                <h4>Symposia & Competitions</h4>
+                <p class="timeline-org">PTU, RA4K & National Symposiums</p>
+                <p class="timeline-desc">Presented papers and competed in coding and debugging challenges across multiple regional colleges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifications reveal">
+        <h3 class="cert-title">Certifications & Training</h3>
+        <div class="cert-grid">
+          <div class="cert-card" id="cert1">
+            <span class="cert-icon">🐍</span>
+            <div>
+              <h4>Python Crash Course</h4>
+              <span>Coursera</span>
+            </div>
+          </div>
+          <div class="cert-card" id="cert2">
+            <span class="cert-icon">💡</span>
+            <div>
+              <h4>Joy of Computing Using Python</h4>
+              <span>NPTEL</span>
+            </div>
+          </div>
+          <div class="cert-card" id="cert3">
+            <span class="cert-icon">📊</span>
+            <div>
+              <h4>Data Analytics Simulation</h4>
+              <span>Deloitte</span>
+            </div>
+          </div>
+          <div class="cert-card" id="cert4">
+            <span class="cert-icon">🏆</span>
+            <div>
+              <h4>Python 3.x Programming</h4>
+              <span>Skillrack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume-download reveal">
+        <a href="assets/resume.pdf" class="btn btn-primary" id="downloadResumeBtn" download>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-subtitle">Let's Work Together!</h3>
+          <p class="contact-desc">
+            Whether you have a project in mind, a question, or just want to say hello — my inbox is always open. I'll try my best to respond!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:dhinakarangt45@gmail.com" class="contact-link-item" id="contactEmail">
+              <div class="contact-link-icon">📧</div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">dhinakarangt45@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919994653527" class="contact-link-item" id="contactPhone">
+              <div class="contact-link-icon">📞</div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 9994653527</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/dhina-karan-5b51a0331" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contactLinkedin">
+              <div class="contact-link-icon">💼</div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/dhina-karan-5b51a0331</span>
+              </div>
+            </a>
+            <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contactGithub">
+              <div class="contact-link-icon">🐙</div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/dhinakarangt45-cmyk</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="formName" class="form-label">Your Name</label>
+            <input type="text" id="formName" class="form-input" placeholder="John Doe" required autocomplete="name" />
+            <span class="form-error" id="formNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="formEmail" class="form-label">Email Address</label>
+            <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" required autocomplete="email" />
+            <span class="form-error" id="formEmailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="formSubject" class="form-label">Subject</label>
+            <input type="text" id="formSubject" class="form-input" placeholder="Project Inquiry" required />
+            <span class="form-error" id="formSubjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="formMessage" class="form-label">Message</label>
+            <textarea id="formMessage" class="form-input form-textarea" placeholder="Hello! I'd like to discuss..." required rows="5"></textarea>
+            <span class="form-error" id="formMessageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+            <span id="submitBtnText">Send Message ✈️</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">&lt;<span>DP</span>/&gt;</a>
+        <p class="footer-text">
+          Designed & Built with ❤️ by <strong>Dhinakaran P</strong>
+        </p>
+        <p class="footer-text footer-copy">
+          © <span id="footerYear">2026</span> · ShadowFox Intern Project
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/dhinakarangt45-cmyk" target="_blank" rel="noopener noreferrer" class="social-link" id="footerGithub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/dhina-karan-5b51a0331" target="_blank" rel="noopener noreferrer" class="social-link" id="footerLinkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
